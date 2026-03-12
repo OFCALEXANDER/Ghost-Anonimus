@@ -12,7 +12,7 @@ Instalación Instantánea (One-Liner)
 Para configurar todo el entorno automáticamente en Kali Linux, Parrot OS o Arch Linux, simplemente copia y pega el siguiente comando en tu terminal:
 
 Bash:
-curl -sSL https://raw.githubusercontent.com/OFCALEXANDER/Ghost-Anonimus/main/setup.sh | bash
+        curl -sSL https://raw.githubusercontent.com/OFCALEXANDER/Ghost-Anonimus/main/setup.sh | bash
 
 
 ----------------------------------------------------------------------------------------------------------------------------
@@ -22,10 +22,10 @@ Una vez finalizada la instalación automática, sigue estos pasos:
 PROCEDE Activar el entorno:
 
 Bash:
-source venv/bin/activate
+        source venv/bin/activate
 
 Bash:
-python3 ghost_proxy.py
+        python3 ghost_proxy.py
 
 ----------------------------------------------------------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ Antes de lanzar cualquier ataque, es vital confirmar que tu Chaleco de Invisibil
 Paso 1: Ver IP del Script, (Recomiendo anotar la IP que te salga aquí, por ejemplo: 185.220.101.10)
 
 bash:
-source venv/bin/activate && python3 ghost_proxy.py
+        source venv/bin/activate && python3 ghost_proxy.py
 
 Paso 2: Ver IP del Sistema con Proxychains
 
 bash:
-proxychains4 curl ifconfig.me
+        proxychains4 curl ifconfig.me
 
 
 Antes y despues de ejecutar este comando es recomendable validar tu ip publica para evitar errores.
@@ -58,8 +58,8 @@ SE UTILIZA LA MISMA SINTAXIS PARA CUALQUIER ESCANEO O EJECUCIÓN DE HERRAMIENTA.
 Al utilizar herramientas como nmap o sqlmap sean invisibles, úsalas con proxychains:
 
 Bash:
-proxychains4 [HERRAMIENTA] [SINTAXI DE HERRAMIENTA] [IP-VICTIMA]
+        proxychains4 [HERRAMIENTA] [SINTAXIS DE HERRAMIENTA] [IP-VICTIMA]
 
-    Normal: nmap -sV target.com -> IP Detectada.
-    Invisible: proxychains4 nmap -sV target.com -> IP de Tor Detectada.
+Normal: nmap -sV target.com -> IP Detectada.
+Invisible: proxychains4 nmap -sV target.com -> IP de Tor Detectada.
 
