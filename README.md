@@ -67,5 +67,6 @@ Bash:
         proxychains4 [HERRAMIENTA] [SINTAXIS DE HERRAMIENTA] [IP-VICTIMA]
 
 Normal: nmap -sV target.com -> IP Detectada.
+
 Invisible: proxychains4 nmap -sV target.com -> IP de Tor Detectada.
 
