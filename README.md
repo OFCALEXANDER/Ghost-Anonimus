@@ -2,6 +2,9 @@ Ghost Anonimus - Advanced Pentesting IP Mask
 
 Ghost Anonimus es una herramienta diseñada para entornos de pentesting controlado. Automatiza la creación de túneles mediante la red Tor, forzando el tráfico a través de un proxy SOCKS5 con rotación dinámica de identidad (The Master Touch) y protección contra fugas de DNS.
 
+Para mayor anonimato, se recomienda utilizar una **VPN** antes de ejecutar la herramienta. Esto reduce el riesgo de exposición en caso de que se olvide utilizar la sintaxis necesaria, como agregar **`proxychains4`** antes de ejecutar cualquier herramienta. De esta forma, si ocurre un descuido, el tráfico seguirá saliendo a través de la VPN y no desde tu **IP real**.
+
+
 ----------------------------------------------------
 
 Instalación Instantánea (One-Liner)
