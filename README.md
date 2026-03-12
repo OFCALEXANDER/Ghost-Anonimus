@@ -26,7 +26,18 @@ python3 ghost_proxy.py
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Si quieres que herramientas como nmap o sqlmap también sean invisibles, úsalas con proxychains:
+Al utilizar herramientas como nmap o sqlmap también sean invisibles, úsalas con proxychains:
 
 Bash:
 proxychains4 nmap -sV [IP-VICTIMA]
+
+---------------------------------------------------------------- 
+
+
+SE UTILIZA LA MISMA SINTAXIS PARA CUALQUIER ESCANEO O EJECUCIÓN DE HERRAMIENTA.
+
+Ejemplos de invisibilidad:
+  Escaneo de puertos Nmap:
+
+    Normal: nmap -sV target.com -> IP Detectada.
+    Invisible: proxychains4 nmap -sV target.com -> IP de Tor Detectada.
