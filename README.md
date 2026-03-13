@@ -25,7 +25,7 @@ Se recomienda abrir una terminal dedicada para el monitor. Este script asegura q
 
 Bash:
        
-        cd Ghost-Anonimus && chmod +x ghost_monitor.sh && ./ghost_monitor.sh
+        cd ~/Ghost-Anonimus && chmod +x ghost_monitor.sh && ./ghost_monitor.sh
 
 
 Para validar:
