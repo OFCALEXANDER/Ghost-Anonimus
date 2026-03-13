@@ -24,11 +24,8 @@ PROCEDE Activar el entorno:
 
 Bash:
        
-        source venv/bin/activate
+        cd Ghost-Anonimus && source venv/bin/activate && python3 ghost_proxy.py
 
-Bash:
-       
-        python3 ghost_proxy.py
 
 ----------------------------------------------------------------------------------------------------------------------------
 
