@@ -9,35 +9,28 @@ Para mayor anonimato, se recomienda utilizar una **VPN** antes de ejecutar la he
 
 Instalación Instantánea (One-Liner)
 
-Para configurar todo el entorno automáticamente en Kali Linux, Parrot OS o Arch Linux, simplemente copia y pega el siguiente comando en tu terminal:
+Para configurar todo el entorno automáticamente en Kali Linux, Parrot OS o Debian, simplemente copia y pega el siguiente comando en tu terminal:
 
 Bash:
        
-        curl -sSL https://raw.githubusercontent.com/OFCALEXANDER/Ghost-Anonimus/main/setup.sh | bash
+        git clone https://github.com/OFCALEXANDER/Ghost-Anonimus.git && cd Ghost-Anonimus && chmod +x *.sh && ./setup.sh
 
 
 ----------------------------------------------------------------------------------------------------------------------------
 
 Una vez finalizada la instalación automática, sigue estos pasos:
 
-PROCEDE Activar Tor manualmente:
+2. Activación del Escudo
+Se recomienda abrir una terminal dedicada para el monitor. Este script asegura que Tor esté siempre activo y rota tu IP automáticamente cada 10 minutos:
 
 Bash:
        
-        sudo systemctl start tor
+        cd Ghost-Anonimus && chmod +x ghost_monitor.sh && ./ghost_monitor.sh
+
 
 Para validar:
 
                sudo systemctl status tor
-
-
----------------------------------------------------------------------------------------------
-
-PROCEDE Activar el entorno:
-
-Bash:
-       
-        source venv/bin/activate && python3 ghost_proxy.py
 
 
 
