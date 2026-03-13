@@ -28,39 +28,11 @@ Bash:
         cd ~/Ghost-Anonimus && chmod +x ghost_monitor.sh && ./ghost_monitor.sh
 
 
-Para validar:
-
-               sudo systemctl status tor
 
 
 
 ----------------------------------------------------------------------------------------------------------------------------
 
-
-Test de Invisibilidad
-
-Antes de lanzar cualquier ataque, es vital confirmar que tu Chaleco de Invisibilidad está bien puesto. Le recomiendo realizar este test para validar el correcto funcionamiento de la herramienta.
-
-Paso 1: Ver IP del Script, (Recomiendo anotar la IP que te salga aquí, por ejemplo: 185.220.101.10)
-
-bash:
-        
-        source venv/bin/activate && python3 ghost_proxy.py
-
-Paso 2: Ver IP del Sistema con Proxychains
-
-bash:
-        
-        proxychains4 curl ifconfig.me
-
-
-Antes y despues de ejecutar este comando es recomendable validar tu ip publica para evitar errores.
-
-ÉXITO : Si la IP del Paso A y el Paso B son IGUALES (y diferentes a tu IP real).
-ERROR : Si el Paso B te muestra tu IP real. (Validar la herramienta con: sudo service tor start).
-
-
------------------------------------------------------------------------------------------------------------------------------
 
 
 SE UTILIZA LA MISMA SINTAXIS PARA CUALQUIER ESCANEO O EJECUCIÓN DE HERRAMIENTA.
