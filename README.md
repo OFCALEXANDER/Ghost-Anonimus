@@ -20,11 +20,25 @@ Bash:
 
 Una vez finalizada la instalación automática, sigue estos pasos:
 
+PROCEDE Activar Tor manualmente:
+
+Bash:
+       
+        sudo service tor start
+
+Para validar:
+
+               sudo service tor status
+
+
+---------------------------------------------------------------------------------------------
+
 PROCEDE Activar el entorno:
 
 Bash:
        
         cd Ghost-Anonimus && source venv/bin/activate && python3 ghost_proxy.py
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------
