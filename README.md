@@ -24,11 +24,11 @@ PROCEDE Activar Tor manualmente:
 
 Bash:
        
-        sudo service tor start
+        sudo systemctl start tor
 
 Para validar:
 
-               sudo service tor status
+               sudo systemctl status tor
 
 
 ---------------------------------------------------------------------------------------------
@@ -37,7 +37,7 @@ PROCEDE Activar el entorno:
 
 Bash:
        
-        cd Ghost-Anonimus && source venv/bin/activate && python3 ghost_proxy.py
+        source venv/bin/activate && python3 ghost_proxy.py
 
 
 
