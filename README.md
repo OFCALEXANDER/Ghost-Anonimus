@@ -20,7 +20,7 @@ Bash:
 
 Una vez finalizada la instalación automática, sigue estos pasos:
 
-2. Activación del Escudo
+Activación del Escudo
 Se recomienda abrir una terminal dedicada para el monitor. Este script asegura que Tor esté siempre activo y rota tu IP automáticamente cada 10 minutos:
 
 Bash:
